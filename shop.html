@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="shop.css">
+
+    <title>Shop</title>
+</head>
+
+<body>
+
+   <!-- header  -->
+
+   <section class="container-fluid justify-content-lg-around head">
+        
+
+    <!--Open Nav-->
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12  side " id="side">
+            <span class="close" onclick="colse_Nav()">&#9587;</span>
+            <ul >
+                <li class="nav_pages nav-bor"><a href="#">New Products</a></li>
+                <li class="nav_pages  nav-bor" ><a href="#">Rate of users </a></li>
+                <li class="nav_pages nav-bor"><a href="#">privacy</a></li>
+                <li class="nav_pages"><a href="#">Contact Us </a></li>
+                <li class="" style="list-style: none;" ><label class="mode" id="dark-change"></label></li>
+            </ul>
+
+
+        </div>
+    </div>
+    <!--close Nav-->
+
+    <div class="row row_open" id="m-top1">
+        <div class="col-lg-12 col-md-12">
+            <span onclick="open_Nav()" class="open_nav" >&#9776;</span>
+        </div>
+    </div>
+
+
+
+    <div class="row  justify-content-lg-around  header" id="m-top2">
+
+
+
+        <div class="row input-search">
+            <div class=" col-lg-12 col-md-12 col-sm-12">
+                <i class="fas fa-search"></i><input type="text" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="row name">
+            <div class=" col-lg-12 col-md-12 col-sm-12">
+                <p>Rania </p>
+            </div>
+        </div>
+
+        <div class="row icons">
+            <div class=" col-lg-12  col-md-12 col-sm-12">
+                <i class="fas fa-user"></i> <i class="far fa-heart"></i>
+
+                <div class="third">
+                    <div class="third">
+                        <div class="nu-2">2</div>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+</section>
+<hr>
+
+<!--End header-->
+
+    <!--Navbar-->
+    <ul class="nav justify-content-center grey lighten-4 py-4">
+
+        <li class="nav-item">
+
+            <a class="nav-link active home" href="index.html">HOME</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link change" href="About.html">ABOUT</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link change" href="shop.html">SHOP</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link change" href="#!">CATALOGUE</a>
+
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link change" href="#!">NEW ARRIVALS</a>
+
+        </li>
+        <li class="nav-item">
+
+            <a class="nav-link change" href="Contact.html">CONTACT</a>
+
+        </li>
+
+    </ul>
+    <!--End Navbar-->
+
+    <section class="container-fluid p-0">
+        <div class="top-bold-gry-line"id="grey_l"><span class="span-home"> Home&nbsp;</span>/ Shop </div>
+    </section>
+
+
+
+    <!--section1-->
+
+    <div class="container section1">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <div class=" border pl-4 pr-4">
+
+                    <p class="title">categories</p>
+                    <div class="d-flex justify-content-between">
+                        <p>Men</p>
+                        <p>(2,220)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Women</p>
+                        <p>(2,250)</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p>Children</p>
+                        <p>(2,124)</p>
+                    </div>
+                </div>
+
+
+
+                <div class="border  pl-4 pr-4   ">
+
+                    <h5 class="h5">filter</h5><br>
+                    <input type="range">
+
+                    <p>$75 - $300</p>
+                    <br>
+                    <p class="title">size</p>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Small (2,319)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Medium (1,282)</label><br>
+                    <input type="checkbox" name="" id="">
+                    <label for="">Large (1,392)</label>
+
+                    <br>
+                    <p class="title">color</p>
+                    <div class="flex-color">
+                        <i class="fas fa-circle red" ></i>
+                        <p>Red (2,429)</p>
+                    
+                    </div>
+                    <div class="flex-color">
+                        <i class="fas fa-circle green"></i>
+                        <p>Green (2,298)</p>
+                    </div>
+                    <div class="flex-color">
+                        <i class="fas fa-circle blue"></i>
+                        <p>Blue (1,075)</p>
+                    </div>
+                    <div class="flex-color">
+                        <i class="fas fa-circle purple"></i>
+                        <p>Purple (1,075)</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-md-6 col-sm-12">
+                <div class=" container d-flex justify-content-between pl-0 pr-0 top-div">
+                    <div class="col-lg-4 Top-l pl-0 pr-0">
+                        <h5>Shop all</h5>
+                    </div>
+                    <div class="col-lg-4 Top-r  ">
+                        <!--Dropdown primary-->
+                        <div class="d-flex">
+                            <div class="dropdown drop1 ">
+
+                                <!--Trigger-->
+                                <a class="btn  dropdown-toggle color-color" type="button" id="dropdownMenu1"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LATEST</a>
+
+
+                                <!--Menu-->
+                                <div class="dropdown-menu dropdown-primary">
+                                    <a class="dropdown-item" href="#">Men</a>
+                                    <a class="dropdown-item" href="#">Women</a>
+                                    <a class="dropdown-item" href="#">Children</a>
+
+                                </div>
+
+                                <!--/Dropdown primary-->
+                            </div>
+                            <div class="dropdown drop2 ">
+                                <!--Dropdown primary-->
+
+
+                                <!--Trigger-->
+                                <a class="btn  dropdown-toggle color-color" type="button" id="dropdownMenu2"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">REFERENCE</a>
+
+
+                                <!--Menu-->
+                                <div class="dropdown-menu dropdown-primary">
+                                    <a class="dropdown-item" href="#">Relevance</a>
+                                    <a class="dropdown-item" href="#">Name,A to Z</a>
+                                    <a class="dropdown-item" href="#">Name,Z to A</a>
+                                    <hr>
+                                    <a class="dropdown-item" href="#">Price,low to high</a>
+                                    <a class="dropdown-item" href="#">Price,high to low</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+
+
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Tank Top</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/shoe_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Corator</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Polo-Shirt</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                                <a href="shop-single.html">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">T-Shirt Mockup</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <a href="shop-single.html">
+                            <div class="card">
+                                <img src="Images/shoe_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Corator</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Tank Top</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/shoe_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Corator</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Polo Shirt</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">T-Shirt Mockup</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/shoe_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Corator</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Tank Top</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <a href="shop-single.html">
+                                <img src="Images/cloth_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h6 class="color-h">Polo shirt</h6>
+                                    <p class="card-text ">Finding Perfect Product</p>
+                                    <h6 class="color-h">&#x24 50</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <hr>
+
+
+    <!--Start section3-->
+
+    <section class="container collectionss ">
+        <div class="row">
+
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="relative  ">
+                    <img src="Images/women.jpg" alt="women">
+                    <div class="absulote">
+                        <p>COLLECTIONS</p>
+                        <h1>WOMEN</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="relative ">
+                    <img src="Images/children.jpg " alt="children">
+                    <div class="absulote">
+                        <p>COLLECTIONS</p>
+                        <h1>CHILDREN</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="relative ">
+                    <img src="Images/men.jpg" alt="men">
+                    <div class="absulote">
+                        <p>COLLECTIONS</p>
+                        <h1>MEN</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <hr>
+
+
+    <!--Start footer-->
+
+    <footer class="container foot  ">
+
+
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12  link">
+                <p class="navigation title">Navigations</p>
+
+                <div class="row link-link">
+
+                    <ul>
+                        <li><a class="a" href="#">Sell online</a></li>
+                        <li><a class="a" href="#">Features</a></li>
+                        <li><a class="a" href="#">Shopping Cart</a></li>
+                        <li><a class="a" href="#">Store builder</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Mobile commerce</a></li>
+                        <li><a href="#">Dropshoipping</a></li>
+                        <li><a href="#">Website development</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a class="a" href="#">Point of sale</a></li>
+                        <li><a class="a" href="#">Hardware</a></li>
+                        <li><a class="a" href="#">Software</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12  ">
+                <p class="title">Promo</p>
+                <div>
+                    <img class="img-img" src="Images/hero_1.jpg" width="100%" alt="">
+                    <p class="purple">Finding Your Perfect Shoes</p>
+                    <p class="p-f">Promo from nuary 15 - 25, 2019</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12  contact">
+                <p class="contact-info title">Contact Info</p>
+
+
+                <p><i class="fas fa-map-marker-alt"></i> 203 Fake St.Mountain View, San Francisco, California, USA</p>
+                <p><i class="fas fa-phone-alt"></i> +2 392 3929210</p>
+                <p><i class="fas fa-envelope"></i> emailaddress@domain.com</p>
+
+                <p class="subscribe title-sub">Subscribe</p>
+
+                <div class="verzamel ">
+                    <input type="email" class="input-email" size="5" placeholder="Email">
+                    <button class="btn-footer">Send</button>
+                </div>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <p class="copyright">Copyright &#169; All right Reseved |This template is made with <i
+                        class="fas fa-heart"></i>
+                    <span class="maker"> Rania </span>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+    <!--End footer-->
+    <script src="Home.js"></script>
+
+    <script src="https://kit.fontawesome.com/ca72f00b9f.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

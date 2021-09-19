@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="login.css">
+  <title>Login</title>
+</head>
+
+<body id="respon">
+
+
+    <!-- header  -->
+
+    <section class="container-fluid justify-content-lg-around head">
+
+
+      <!--Open Nav-->
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12  side " id="side">
+              <span class="close" onclick="colse_Nav()">&#9587;</span>
+              <ul>
+                  <li class="nav_pages nav-bor "><a href="#" >New Products</a></li>
+                  <li class="nav_pages  nav-bor accordion"><a href="#" >Rate of users </a></li>
+                  <li class="nav_pages nav-bor accordion"><a href="#" >privacy</a></li>
+                  <li class="nav_pages accordion"><a href="#" >Contact Us </a></li>
+                  <li class="" style="list-style: none;" ><label class="mode" id="dark-change"></label></li>
+              </ul>
+
+
+          </div>
+      </div>
+      <!--close Nav-->
+
+      <div class="row row_open" id="m-top1">
+          <div class="col-lg-12 col-md-12">
+              <span onclick="open_Nav()" class="open_nav">&#9776;</span>
+          </div>
+      </div>
+
+
+
+      <div class="row  justify-content-lg-around  header" id="m-top2">
+
+
+
+          <div class="row input-search">
+              <div class=" col-lg-12 col-md-12 col-sm-12">
+                  <i class="fas fa-search"></i><input type="text" placeholder="Search">
+              </div>
+          </div>
+
+          <div class="row name">
+              <div class=" col-lg-12 col-md-12 col-sm-12">
+                  <p>Rania </p>
+              </div>
+          </div>
+
+          <div class="row icons">
+              <div class=" col-lg-12  col-md-12 col-sm-12">
+                  <i class="fas fa-user"></i> <i class="far fa-heart"></i>
+
+                  <div class="third">
+                      <div class="third">
+                          <div class="nu-2">2</div>
+                          <i class="fas fa-shopping-cart"></i>
+                      </div>
+
+
+                  </div>
+              </div>
+
+          </div>
+  </section>
+  <hr>
+
+  <!--End header-->
+
+  <!--Navbar-->
+
+
+
+  <ul class="nav justify-content-center grey lighten-4 py-4 " id="m-top3">
+
+      <li class="nav-item">
+
+          <a class="nav-link active home" href="index.html">HOME</a>
+
+      </li>
+      <li class="nav-item">
+
+          <a class="nav-link change" href="About.html">ABOUT</a>
+
+      </li>
+      <li class="nav-item">
+
+          <a class="nav-link change" href="shop.html">SHOP</a>
+
+      </li>
+      <li class="nav-item">
+
+          <a class="nav-link change" href="#!">CATALOGUE</a>
+
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link change" href="#!">NEW ARRIVALS</a>
+
+      </li>
+      <li class="nav-item">
+
+          <a class="nav-link change" href="Contact.html">CONTACT</a>
+
+      </li>
+      <!--
+      <li class="nav-item">
+          <a class="nav-link" href="#" title=""><img src="Images/moon.jpg" class="mode_img" id="icon"></a>
+      </li>-->
+
+  </ul>
+  <!--End Navbar-->
+
+
+
+  <!--Section Login Form-->
+  <form class="form_size " onsubmit=" return loginValidate()"  >
+    <fieldset class="filed_size ">
+      <div class="mb-3 error" id="error"></div>
+      <div class="mb-3">
+
+        <input type="email" class="form-control input_style" id="your_email" aria-describedby="emailHelp"
+          placeholder="Enter your E-mail">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3 ">
+
+        <input type="password" class="form-control input_style" id="your_password" placeholder="Enter your Password">
+      </div>
+      <a href="#">Forgot Your password?</a>
+      <hr>
+      <a href="cart.html"><button type="submit" class="btn btn-primary btn-login " >Login</button></a>
+
+
+      <p>Don't have account ? <a href="register.html" data-toggle="modal" data-target="#exampleModal"> Register </a> now
+      </p>
+
+    </fieldset>
+
+  </form>
+
+
+  <!--End section Login Form-->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header mod-header">
+          <h5 class="modal-title mod-color" id="exampleModalLabel">Sign-up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+
+          <!-- start register   -->
+
+          <form class="form-style" onclick="return call();">
+            <fieldset class="container field-style">
+              <div class="form-row justify-content-lg-around ">
+                <div class="div-p">
+                  <p id="isvalid" class="isvalid"></p>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 "><input type="text" id="firstName"
+                      class="form-control in-space" placeholder="First Name"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 ">
+                    <input type="text" class="form-control in-space" placeholder="Last Name" id="lastName" >
+                
+                  </div>
+                </div>
+
+              </div>
+              <div class="form-row justify-content-lg-around">
+                <div class="row">
+
+                  <div class="input-group col-lg-6 col-md-6 col-sm-12 ">
+
+                    <span class="input-group-text input-group-prepend in-space">@</span>
+                    <input type="text" class="form-control in-space" id="inlineFormInputGroup" placeholder="Username">
+                  </div>
+
+
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="email" id="email" class="form-control in-space  " placeholder="E-mail">
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+              <div class="form-row justify-content-lg-around">
+                <div class="col-lg-6 col-md-6 col-sm-12"><input type="text" id="password" class="form-control in-space"
+                    placeholder="Password"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12"><input type="text" id="PhoneNumber"
+                    class="form-control in-space" placeholder="PhoneNumber"></div>
+              </div>
+              <a href="index.html"><button  class="btn-for-register btn-signin" >Sign-up</button></a>
+
+
+            </fieldset>
+          </form>
+          <!--end of register-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="Home.js"></script>
+
+  <script src="https://kit.fontawesome.com/ca72f00b9f.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<!--
+
+      
+      
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal_pos">
+        <div class="modal-content modal_style">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+         
+
+    start register   
+
+    <form class="form-style" onsubmit="return call();">
+      <fieldset class="container field-style">
+          <div class="form-row justify-content-lg-around ">
+              <div class="div-p">
+                  <p id="isvalid" class="isvalid"></p>
+              </div>
+              <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-12 "><input type="text" id="firstName"
+                          class="form-control in-space" placeholder="First Name"></div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 "><input type="text" class="form-control in-space"
+                          placeholder="Last Name"></div>
+              </div>
+
+          </div>
+          <div class="form-row justify-content-lg-around">
+              <div class="row">
+
+                  <div class="input-group col-lg-6 col-md-6 col-sm-12 ">
+
+                      <span class="input-group-text input-group-prepend in-space">@</span>
+                      <input type="text" class="form-control in-space" id="inlineFormInputGroup"
+                          placeholder="Username">
+                  </div>
+
+
+
+
+                  <div class="col-lg-6 col-md-6 col-sm-12">
+                      <input type="email" id="email" class="form-control in-space  " placeholder="E-mail">
+                  </div>
+
+
+
+              </div>
+
+          </div>
+
+          <div class="form-row justify-content-lg-around">
+              <div class="col-lg-6 col-md-6 col-sm-12"><input type="text" id="password" class="form-control in-space" placeholder="Password"></div>
+              <div class="col-lg-6 col-md-6 col-sm-12"><input type="text" id="PhoneNumber" class="form-control in-space" placeholder="PhoneNumber"></div>
+          </div>
+          <a href="#"><input type="submit" class="btn-for-register btn-signin" value="Sign-up"></a>
+      </fieldset>
+  </form>
+end of register
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+-->
